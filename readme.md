@@ -71,6 +71,12 @@ we will need to manually invoke this file everytime we add a file to the assets 
 
 `go run .`
 
+*build the app from src*
+
+`cd ./src`
+
+`go build . -o ../build`
+
 *run tests*
 
 `cd ./src`
