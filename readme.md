@@ -42,3 +42,8 @@ Sieve of Eratosthenes allows us to generate a list of primes. with preformance o
 reference:
 
 [khan academy](https://duckduckgo.com "***sieve of eratosthenes***") ***sieve of eratosthenes***
+
+
+go modules we will be using for this project
+
+[gin-gonic](github.com/gin-gonic/gin)
