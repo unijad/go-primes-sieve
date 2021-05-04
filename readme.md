@@ -87,3 +87,14 @@ we will need to manually invoke this file everytime we add a file to the assets 
 
 `yarn install` or `npm install` note: please dont use both while installing, to avoid dependencies conflict
 
+*watch files changes and build assets `development only`*
+
+`yarn start`
+
+*build assets*
+
+`yarn build`
+
+*generate workbox caching sw*
+
+`workbox generateSW`
