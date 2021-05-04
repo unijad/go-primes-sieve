@@ -9,7 +9,7 @@ Create a web application that takes in a number and returns to the user the high
 
 *technologies to be used:*
 
-- golang/gogin *base server*
+- golang/gogin *base server* [√]
 - typescript/react-jsx *client side*
 - sass *styles*
 - docker *one config, one container*
@@ -57,7 +57,7 @@ go modules we will be using for this project
 
 we will need to manually invoke this file everytime we add a file to the assets folder, we can automate this by using file watcher
 
-***usage:***
+***commane line and usage:***
 
 *generate assets*
 
@@ -71,7 +71,7 @@ we will need to manually invoke this file everytime we add a file to the assets 
 
 `go run .`
 
-*run test*
+*run tests*
 
 `cd ./src`
 

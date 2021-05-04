@@ -1,0 +1,8 @@
+{
+  "name": "primes-sieve",
+  "version": "1.0.0",
+  "main": "src/public/index.js",
+  "license": "MIT",
+  "repository": "git@github.com:unijad/go-primes-sieve.git",
+  "author": "Younis Jad <younis.m.jad@gmail.com>"
+}
