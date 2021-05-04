@@ -4,5 +4,26 @@
   "main": "src/public/index.js",
   "license": "MIT",
   "repository": "git@github.com:unijad/go-primes-sieve.git",
-  "author": "Younis Jad <younis.m.jad@gmail.com>"
+  "author": "Younis Jad <younis.m.jad@gmail.com>",
+  "scripts": {
+    "start": "parcel watch src/assets/index.tsx --out-dir src/public --public-url /public/",
+    "build": "parcel build src/assets/index.tsx --out-dir src/public --public-url /public/",
+    "workbox:generate": "workbox generateSW"
+  },
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.14.0",
+    "@babel/preset-react": "^7.13.13",
+    "@parcel/babel-plugin-transform-runtime": "^2.0.0-nightly.1823",
+    "@parcel/babel-preset-env": "^2.0.0-alpha.3",
+    "@types/react": "^17.0.4",
+    "@types/react-dom": "^17.0.3",
+    "parcel-bundler": "^1.12.5",
+    "sass": "^1.32.12",
+    "typescript": "^4.2.4",
+    "workbox-cli": "^6.1.5 "
+  }
 }
