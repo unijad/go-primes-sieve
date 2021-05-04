@@ -8,12 +8,14 @@ RUN mkdir -p /api
 WORKDIR /api
 
 COPY . .
-RUN go get github.com/jessevdk/go-assets-builder
-RUN go mod tidy
 RUN go mod download
+RUN go get github.com/jessevdk/go-assets-builder
+RUN go get github.com/GeertJohan/go.rice
+RUN go get github.com/GeertJohan/go.rice/rice
 
 WORKDIR /api/src
 RUN go-assets-builder views -o assets.go
+RUN rice embed-go -i .
 RUN go build -o ../build/app
 
 FROM alpine:latest
