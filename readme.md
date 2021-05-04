@@ -10,10 +10,10 @@ Create a web application that takes in a number and returns to the user the high
 *technologies to be used:*
 
 - golang/gogin *base server* [√]
-- typescript/react-jsx *client side*
-- sass *styles*
-- docker *one config, one container*
-- workbox *offline caching, PWA*
+- typescript/react-jsx *client side* [√]
+- sass *styles* [√]
+- docker *one config, one container* [√]
+- workbox *offline caching, PWA* [√]
 
 *project files*
 
@@ -74,6 +74,12 @@ we will need to manually invoke this file everytime we add a file to the assets 
 *build the app from src*
 
 `cd ./src`
+
+`go get github.com/GeertJohan/go.rice`
+
+`go get github.com/GeertJohan/go.rice/rice`
+
+`rice embed-go -i .`
 
 `go build . -o ../build`
 
