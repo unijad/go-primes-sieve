@@ -1,0 +1,72 @@
+#prime-form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  padding: 1rem;
+  background: #fff;
+  border: 1px solid #0001;
+  border-radius: 0.5rem;
+  box-shadow: 0.5rem 0.5rem 0.5rem #0001;
+
+  > * {
+    margin: 0 0.5rem;
+  }
+
+  #title {
+    border: unset;
+    padding: 0;
+    color: #7700e0c9;
+  }
+
+  #validation {
+    position: absolute;
+    top: calc(100% + 1rem);
+    left: 0;
+    color: #f30;
+    font-size: smaller;
+  }
+
+  .form-field {
+    font: inherit;
+    border: 1px solid #ddd;
+    border-radius: calc(1rem / 4);
+    padding: 0.5rem;
+  }
+
+  .form-button {
+  }
+}
+#prime-result {
+  @extend #prime-form;
+}
+
+.button {
+  font: inherit;
+  border: 1px solid #ddd;
+  border-radius: calc(1rem / 4);
+  padding: 0.5rem;
+  background: #7700e0;
+  color: #fff;
+  font-weight: 200;
+  transition: 160ms;
+
+  &.primary {
+    background: #7700e0;
+  }
+
+  &.secondary {
+    background: #c497ff;
+  }
+
+  &:hover {
+    filter: hue-rotate(20deg);
+  }
+
+  &:disabled {
+    background: #ccc;
+    filter: contrast(0.5);
+  }
+}

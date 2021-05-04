@@ -2,9 +2,9 @@ import "./index.scss";
 
 import * as React from "react";
 import * as ReactDOM from "react-dom";
-
+import GetHighestPrimeFormWidget from "./highestPrime.component";
 
 ReactDOM.render(
-    <h1>Hello World</h1>,
+    <GetHighestPrimeFormWidget />,
     document.getElementById('root'),
 )
