@@ -17,6 +17,8 @@ func routerSetup() *gin.Engine {
 	r.SetHTMLTemplate(t)
 
 	r.GET("/", HomeController)
+	r.POST("/get-previous-prime", HighestPrimeNumber)
+
 	return r
 }
 
