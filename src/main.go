@@ -1,6 +1,7 @@
 package main
 
 import (
+	rice "github.com/GeertJohan/go.rice"
 	"github.com/gin-gonic/gin"
 	"html/template"
 	"io/ioutil"
@@ -15,10 +16,13 @@ func routerSetup() *gin.Engine {
 		panic(err)
 	}
 	r.SetHTMLTemplate(t)
-
+	// use go rice to expose public folder
+	pbox, _ := rice.FindBox("public")
+	r.StaticFS("/public", pbox.HTTPBox())
+	// configure routes
 	r.GET("/", HomeController)
 	r.POST("/get-previous-prime", HighestPrimeNumber)
-
+	// return router
 	return r
 }
 
