@@ -98,3 +98,11 @@ we will need to manually invoke this file everytime we add a file to the assets 
 *generate workbox caching sw*
 
 `workbox generateSW`
+
+*docker build*
+
+`docker build . -t go-primes-sieve`
+
+*run from docker image*
+
+`docker run -i -t -p 8080:8080 go-primes-sieve`

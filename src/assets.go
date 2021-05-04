@@ -10,19 +10,19 @@ var _Assets80c0d7c4b5f47513d79ddc23ee8b0f4488cb1b9b = "<!DOCTYPE html>\n<html la
 
 // Assets returns go-assets FileSystem
 var Assets = assets.NewFileSystem(map[string][]string{"/": []string{"views"}, "/views": []string{"home.html"}}, map[string]*assets.File{
-	"/views/home.html": &assets.File{
-		Path:     "/views/home.html",
-		FileMode: 0x1a4,
-		Mtime:    time.Unix(1620137450, 1620137450900942329),
-		Data:     []byte(_Assets80c0d7c4b5f47513d79ddc23ee8b0f4488cb1b9b),
-	}, "/": &assets.File{
+	"/": &assets.File{
 		Path:     "/",
 		FileMode: 0x800001ed,
-		Mtime:    time.Unix(1620136681, 1620136681768160041),
+		Mtime:    time.Unix(1620145568, 1620145568996107222),
 		Data:     nil,
 	}, "/views": &assets.File{
 		Path:     "/views",
 		FileMode: 0x800001ed,
 		Mtime:    time.Unix(1620137450, 1620137450901192792),
 		Data:     nil,
+	}, "/views/home.html": &assets.File{
+		Path:     "/views/home.html",
+		FileMode: 0x1a4,
+		Mtime:    time.Unix(1620137450, 1620137450900942329),
+		Data:     []byte(_Assets80c0d7c4b5f47513d79ddc23ee8b0f4488cb1b9b),
 	}}, "")
