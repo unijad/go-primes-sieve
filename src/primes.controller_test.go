@@ -27,3 +27,14 @@ func TestPreviousPrimeNumberController(t *testing.T) {
 	assert.Equal(t, 200, w.Code)
 	assert.Equal(t, resParam, w.Body.String())
 }
+
+func TestPrimes(t *testing.T) {
+	highestprime1 := getHighestPrimeNumber(5)
+	assert.Equal(t, highestprime1, 5)
+
+	highestprime2 := getHighestPrimeNumber(55)
+	assert.Equal(t, highestprime2, 53)
+
+	highestprime3 := getHighestPrimeNumber(2)
+	assert.Equal(t, highestprime3, 2)
+}
