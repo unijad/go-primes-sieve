@@ -6,7 +6,5 @@ import (
 )
 
 func HomeController(c *gin.Context) {
-	c.HTML(http.StatusOK, "/views/home.html", gin.H{
-		"Foo": "World",
-	})
+	c.HTML(http.StatusOK, "/views/home.html", nil)
 }

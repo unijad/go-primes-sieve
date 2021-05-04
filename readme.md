@@ -57,4 +57,8 @@ go modules we will be using for this project
 
 we will need to manually invoke this file everytime we add a file to the assets folder, we can automate this by using file watcher
 
-***usage:*** `go-assets-builder views -o assets.go`
+***usage:*** 
+
+`cd ./src`
+
+`go-assets-builder views -o assets.go`
